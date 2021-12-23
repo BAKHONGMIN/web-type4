@@ -1,0 +1,50 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#hd{
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+}
+#hd a{
+    display: block; white-space: nowrap;
+}
+#hd .container{
+    display: flex;
+    /* justify-content: space-between;  */
+    align-items: center;
+}
+#gnb{
+    display:flex;
+}
+#gnb .d1li{
+    left: 700px;
+}
+.d1a{
+    font-size: 1.5em;
+    line-height: 100px;
+    padding: 0 1em;
+}
+.d1li{
+    position: relative;
+}
+.d2ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: black;
+    min-width: 120px;
+    overflow: hidden;
+    transition: 0.5s;
+    height: 0;
+}
+.d1li:hover .d2ul{
+    height: 150px;
+}
+.d2ul a{
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
